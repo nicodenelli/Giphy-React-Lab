@@ -5,17 +5,17 @@ import React, { useRef } from 'react';
 
 // const inputRef = useRef() creates a reference to hold the input element.
 export default function Form(props) {
-    const inputRef = useRef(null);
+    const inputURL = useRef(null);
     const handleSubmit = (e) => {
         e.preventDeafault();
-        const val = inputRef.current.value;
+        const val = inputURL.current.value;
         console.log('val', val)
         props.handleSubmit(val);
     };
 
     return (
         <form onSubmit={handleSubmit}>
-            <input ref={inputRef} placeholder="Search New Gifs Here" />
+            <button ref={inputURL} type='text'>Submit</button>
         </form>
     )
 }
