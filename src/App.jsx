@@ -45,6 +45,11 @@ export default function App() {
       <h2>Giphy REACT Lab</h2>
       <Form handleSubmit={handleSubmit} />
       <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       {giphySrc.image_url ? (
         <Giphy giphySrc={giphySrc} />
       ) : (
