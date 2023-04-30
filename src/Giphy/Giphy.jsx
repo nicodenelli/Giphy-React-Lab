@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Giphy({giphySrc}) {
+export default function Giphy({image}) {
     return (
-        <div className='gif-row'>
-            <img src={giphySrc.image_url} alt="Giphy" />
+        <div>
+            <img src={image.image_url} alt="image" />
         </div>
     )
 }
