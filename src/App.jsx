@@ -26,9 +26,9 @@ export default function App() {
       setGiphySrc({ image_url: allData.data.images.original.url });
   }
 
-  const handleSubmit = async (v) => {
-    if(v) {
-      const giphyURL = `https://api.giphy.com/v1/gifs/search?api_key=OKpcTUbJ4uRt8Ar1fR70FrdXRxCdLcZd&q=${v}&limit=25&offset=0&rating=g&lang=en`;
+  async function handleSubmit(l){
+    if(l) {
+      const giphyURL = `https://api.giphy.com/v1/gifs/search?api_key=OKpcTUbJ4uRt8Ar1fR70FrdXRxCdLcZd&q=${l}&limit=25&offset=0&rating=g&lang=en`;
       const response = await fetch(giphyURL);
       const allData = await response.json();
       setGiphySrc({ image_url: allData.data[0].images.original.url });
