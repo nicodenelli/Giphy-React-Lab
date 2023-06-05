@@ -2,7 +2,7 @@
   "name": "giphy-react-lab",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://nicodenelli.github.io/Giphy-React-Lab",
+  "homepage": "https://nicodenelli.github.io/Giphy-React-Lab/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
