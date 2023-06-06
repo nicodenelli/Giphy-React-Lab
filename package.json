@@ -1,15 +1,14 @@
 {
-  "homepage": "https://nicodenelli.github.io/Giphy-React-Lab/",
+  "homepage": "http://nicodenelli.github.io/Giphy-React-Lab",
   "name": "giphy-react-lab",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
